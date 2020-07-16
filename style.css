@@ -75,7 +75,7 @@ html{
 }
 
 .banner{
-    background-image:linear-gradient(rgba(75, 75, 75, 0.25), rgba(75, 75, 75, 0.25)), url("/photos/procedural.png");
+    background-image:linear-gradient(rgba(75, 75, 75, 0.25), rgba(75, 75, 75, 0.25)), url("../photos/procedural.png");
     color: white;
     text-align: center;
     padding: 5%;
@@ -83,7 +83,7 @@ html{
 }
 
 .blurred-banner-image{
-    background-image: url("/photos/procedural.JPG");
+    background-image: url("../photos/procedural.JPG");
     filter: blur(8px);
     -webkit-filter: blur(8px);
 }
