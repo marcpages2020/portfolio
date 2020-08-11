@@ -2,6 +2,12 @@
 box-sizing: border-box;
 }
 
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 img{
     max-width: 100%;
 }
@@ -60,18 +66,21 @@ a:visited{
     .col-12 {width: 100%;}
   }
 
-  .dark-section{
+.section{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.dark-section{
       padding-top: 10px;
-      padding-bottom: 10px;
-  }
-  .light-section{
-    background-color: #404040; 
+      padding-bottom: 2vW;
+      background-color: #202020;
+}
+
+.light-section{
+    background-color: #F6F6F6; 
     padding-top: 10px;
     padding-bottom: 2vW;
-  }
-/*text*/
-html{
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .banner{
@@ -94,56 +103,16 @@ html{
     -webkit-filter: blur(8px);
 }
 
-.paragraph{
-    font-size: 20px; 
-    color: whitesmoke;  
-}
-
-.split-screen{
-    column-count: 2;
-    padding-left: 2vw;
-}
-
 .column-image{
     height: 100%;
     width: 100%;;
 }
 
-.white-header{
-    color: white;
-    font-size:2.5vw;
-    text-align: center;
-}
-
-.black-header{
-    color:black;
-    font-size:2.5vw;
-    text-align: center;
-}
-
-/*buttons and effects*/
-.cv-button{
-    color: #3C3D3C;
-    text-align: center;
-    background-color: #8282F3;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: 40%;
-    border-top: 20%;
-    transition-duration: 0.4s;
-}
-
-.cv-button:hover{
-    background-color: #363692;
-    color: white;
-}
 
 .container {
     position: relative;
     height: fit-content;
-  }
+}
 
 .overlay {
     position: absolute;
@@ -173,36 +142,6 @@ html{
     transform: translate(-50%, -50%);
     text-align: center;
   }
-
-/* -- Navbar -- */
-#navbar {
-    overflow: hidden;
-    background-color: #3C3D3C;
-    width: 100%;
-  }
-  
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 17px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    width:33.33%;
-    transition-duration: 0.2s;
-  }
-
-#navbar a:hover {
-background-color: #ddd;
-color: black;
-}
-
-#navbar a.active {
-background-color: #4CAF50;
-color: white;
-}
-/*-----------------------*/
 
 .content{
     padding: 16px;
