@@ -82,6 +82,12 @@ html{
     text-shadow: 1px 1px 4px #000000;
 }
 
+.contribution{
+    background-color: grey;
+    font-size: 16px;
+    color: white;
+}
+
 .blurred-banner-image{
     background-image: url("../photos/procedural.JPG");
     filter: blur(8px);
