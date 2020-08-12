@@ -1,6 +1,6 @@
 /*buttons and effects*/
 .cv-button{
-    color:#00C9FF;
+    color:turquoise;
     background-color: transparent;
     border-color: turquoise;
     border: solid;
@@ -14,17 +14,59 @@
 }
 
 .cv-button:hover{
+    background-color:turquoise;
+    border-color: turquoise;
+    color: white;
+}
+
+.contact-button{
+    transition-duration: 0.6s;
+    width: 7vw;
+}
+
+.contact-button:hover{
+    opacity: 0.6;
+}
+
+.more-info-button{
+    color:turquoise;
+    background-color: transparent;
+    border-color: turquoise;
+    border: solid;
+    text-align: center;
+    transition-duration: 0.4s;
+    font-size: 20px;
+    border-radius: 22px;
+    padding: 15px 80px;
+    text-decoration: none;
+    margin-left: 25%;
+}
+
+.more-info-button:hover{
     background-color:#00C9FF;
     border-color: #00C9FF;
     color: white;
 }
 
-.contact-button{
-    width: 7vw;
+
+.webpage-button{
+    color: greenyellow;
+    background-color: transparent;
+    border-color: greenyellow;
+    border: solid;
+    text-align: center;
+    transition-duration: 0.25s;
+    font-size: 16px;
+    border-radius: 22px;
+    padding: 15px 80px;
+    text-decoration: none;
+    margin-left: 22.5%;
 }
 
-.contact-button:hover{
-    opacity: 0.8;
+.webpage-button:hover{
+    background-color:greenyellow;
+    border-color: greenyellow;
+    color: grey;
 }
 
 /* -- Navbar -- */
