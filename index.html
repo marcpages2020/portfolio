@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="description" content="Personal Portfolio"/>
-        <meta name="keywords" conent="Game,Developer,Portfolio,Programmer"/>
-        <meta name="author" content="Marc Pagès Francesch"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Marc Pagès Francesch | Game Developer</title>
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="interactive.css"/>
-        <link rel="stylesheet" href="text.css"/>
-        <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
-    </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="keywords" conent="Game,Developer,Portfolio,Programmer" />
+    <meta name="author" content="Marc Pagès Francesch" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marc Pagès Francesch | Game Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="interactive.css" />
+    <link rel="stylesheet" href="text.css" />
+    <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+</head>
 
 <body style="background-color: #333;">
 
     <!--Banner-->
     <div class="banner">
-        <!-- Big beginning-->
-        <h1 style="font-size: 4vw; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Marc Pagès Francesch</h1>
-        <h2 style="font-size: 3vw; font-family: Verdana, Geneva, Tahoma, sans-serif;">Game Developer</h2>
+        <table
+            style="padding-top: 7.5%; padding-bottom: 7.5%; padding-right: 7.5%;padding-left: 3.5%; width: 100%;">
+            <tr>
+                <td style="font-size: 4.0vw; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Marc Pagès
+                    Francesch </td>
+            </tr>
+            <tr>
+                <td style="font-size: 3.0vw; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">Game
+                    Developer</td>
+            </tr>
+        </table>
     </div>
 
     <!--Navbar-->
@@ -31,90 +40,124 @@
 
     <!--About Me-->
     <div id="AboutMe" class="section" style="background-color: #EBEBEB;">
-        <h2 class="header" style="color: black;">About Me</h2>
         <div class="row" style="padding-bottom: 2.5%;">
-            <div class="col-8" style="padding-left: 2.5%;"> 
-                <p class="paragraph" style="padding-bottom: 5%; margin-top: 2.5%; margin-left: 2.5%;">
-                    Born in Reus on 28th of June of 2000. Due to my passion for video games and my interest in computer science and graphics I started my video game development degree in CITM in Terrassa in 2018. 
-                    I'm proficient in C and C++ and quite comfortable scripting in C# and HTML. The magic behind creating effective and well optimized code just increases my passion for video games.<br>
-                    I can use 3D software such as 3Ds Max and Maya but the one I'm most used to is Blender. Modelling is my second reason to be passionate about video games. 
+            <div class="col-1 col-s-0">
+            </div>
+            <div class="col-7" style="padding-left: 2.5%; padding-right: 4.5%;">
+                <h2 class="header" style="color: black; text-align: left;">About Me</h2>
+                <p class="paragraph">
+                    Born in Reus on 28th of June of 2000. Due to my passion for video games and my interest in computer
+                    science and graphics I started my video game development degree in CITM in Terrassa in 2018.
+                    I'm proficient in C and C++ and quite comfortable scripting in C# and HTML. The magic behind
+                    creating effective and well optimized code just increases my passion for video games.<br>
+                    I can use 3D software such as 3Ds Max and Maya but the one I'm most used to is Blender. Modelling is
+                    my second reason to be passionate about video games.
                     I'm quite experienced in Adobe Photoshop, Illustrator and Premiere. <br>
                 </p>
-                <a href="documents/MarcPagesFrancesch.pdf" class="cv-button"><b>CV</b></a>
+
             </div>
-            <div class="col-3" > 
-                <img src="photos/personal_pic_squared.jpg" alt="Personal Picture" style="border-radius: 100%; margin-left: 15%;">
-            </div>
-        </div>
-    </div>
-    
-    <!--Projects-->
-    <div  id="Projects" class="section" style="padding-bottom: 4%;">
-        <!--Projects-->
-        <h2 class="header" style="color:white">Projects</h2>
-        <div class="row">
-            <div class="col-4 container" onClick="openUrlInNewTab('https://kalima-entertainment.github.io/Fallout_Strategy/index.html');">
-                <img src="photos/fallout-strategy.png" alt="Fallout Strategy">
-                <div class="overlay">
-                    <div class="text">Fallout Strategy</div>
-                  </div>
-            </div>
-            <div class="col-4 container" onClick="openUrlInNewTab('https://marcpages2020.github.io/Samurai-Shodown/');">
-                <img src="photos/samurai_shodown.png" alt="Samurai Shodown">
-                <div class="overlay">
-                    <div class="text">Samurai Shodown</div>
-                  </div>
-            </div>
-            <div class="col-4 container" onClick="openUrlInNewTab('https://windfog-studios.github.io/The-Little-Explorer/');">
-                <img src="photos/the_little_explorer.png" alt="The Little Explorer">
-                <div class="overlay">
-                    <div class="text">The Little Explorer</div>
+            <div class="col-3">
+                <div class="row" style="padding: 10%;">
+                    <img src="photos/personal_picture.jpeg" alt="Personal Picture" style="border-radius: 100%;">
+                </div>
+                <div class="row">
+                    <a href="documents/MarcPagesFrancesch.pdf" class="cv-button center"><b>CV</b></a>
                 </div>
             </div>
-
-            <!--More Info Button-->
-            <div class="col-4"></div>
-            <div class="col-4" style="padding-top: 2%;">
-                <a href="projects.html" class="more-info-button"><b>more info</b></a>
+            <div class="col-1 col-s-0">
             </div>
-            <div class="col-4"></div>
         </div>
     </div>
 
-    <!--Contact-->
-    <div id="Contact" class="section" style="background-color: #EBEBEB;;">
+    <!--Projects-->
+    <div id="Projects" class="section" style="padding-bottom: 4%;">
+        <!--Projects-->
         <div class="row">
-        <h2 class="header" style="padding-top: 2vw; padding-bottom: 1vw; margin: auto;; color: black;">Contact</h2>
+            <h2 class="header" style="color:white">Projects</h2>
+            <div class="row">
+                <div class="col-4 col-s-6 container"
+                    onClick="openUrlInNewTab('https://kalima-entertainment.github.io/Fallout_Strategy/index.html');">
+                    <img src="photos/fallout-strategy.png" alt="Fallout Strategy">
+                    <div class="overlay">
+                        <div class="text">Fallout Strategy</div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-s-6 container"
+                    onClick="openUrlInNewTab('https://marcpages2020.github.io/Samurai-Shodown/');">
+                    <img src="photos/samurai_shodown.png" alt="Samurai Shodown">
+                    <div class="overlay">
+                        <div class="text">Samurai Shodown</div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-s-6 container"
+                    onClick="openUrlInNewTab('https://windfog-studios.github.io/The-Little-Explorer/');">
+                    <img src="photos/the_little_explorer.png" alt="The Little Explorer">
+                    <div class="overlay">
+                        <div class="text">The Little Explorer</div>
+                    </div>
+                </div>
+
+                <!--More Info Button-->
+                <!-- <div class="col-4"></div>
+                <div class="col-4" style="padding-top: 2%;">
+                    <a href="projects.html" class="change-page-button"><b>more info</b></a>
+                </div>
+                <div class="col-4"></div>
+                -->
+            </div>
         </div>
-        <div style="padding-left: 39%;">
-            <a href="https://github.com/marcpages2020"><img src="icons/github.png" alt="github" class="contact-button"></a>
-            <a href="https://www.linkedin.com/in/marc-pagès-francesch-7206b3186/"><img src="icons/linkedin.png" alt="github"class="contact-button"></a>
-            <a href="https://twitter.com/MarcPF22?s=08"><img src="icons/twitter.png" alt="github" class="contact-button"></a>
+
+  
+
+        <!--Contact-->
+        <div id="Contact" class="section" style="background-color: #EBEBEB;">
+            <h2 class="header" style="padding-top: 2vw; padding-bottom: 1vw; margin: auto; color: black;">Contact</h2>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-7">
+                    <a href="mailto:marcpages13@gmail.com?Subject=Hey!" target="_blank" class="mail center-vertically">marcpages13@gmail.com</a>
+                </div>
+                <div class="col-1">
+                    <a href="https://twitter.com/MarcPF22?s=08"><img src="icons/twitter.png" alt="github" class="contact-button"></a>
+                </div>
+                <div class="col-1">
+                    <a href="https://github.com/marcpages2020"><img src="icons/github.png" alt="github" class="contact-button"></a>
+                </div>
+                <div class="col-1">
+                    <a href="https://www.linkedin.com/in/marc-pagès-francesch-7206b3186/"><img src="icons/linkedin.png" alt="github" class="contact-button"></a>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+            <!--Recognition-->
+            <div style="text-align: center; background-color: #EBEBEB; padding-bottom: 1vw;">Icons made by
+                <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
         </div>
-        <h2 style="text-align: center; padding-top: 2vw; padding-bottom: 1vw; font-size: 1.5vw;">marcpages13@gmail.com</h2>
 
-     <!--Recognition-->
-    <div style="text-align: center; background-color: background-color: #EBEBEB;; padding-bottom: 1vw;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    </div>
+        <!--scripting-->
+        <script>
+            window.onscroll = function () { stickyNavbar() };
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
 
-    <!--scripting-->
-    <script>
-        window.onscroll = function() {stickyNavbar()};
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function stickyNavbar(){
-            if (window.pageYOffset >= sticky){
-                navbar.classList.add("sticky")
-            }else{
-                navbar.classList.remove("sticky");
+            function stickyNavbar() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
             }
-        } 
 
-    function openUrlInNewTab(url){
-        window.open(url, "_blank");
-    }
-    </script>
+            function openUrlInNewTab(url) {
+                window.open(url, "_blank");
+            }
+        </script>
 
 </body>
+
 </html>
