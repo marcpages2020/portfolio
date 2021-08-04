@@ -1,20 +1,19 @@
 /*buttons and effects*/
 .cv-button{
-    color:turquoise;
+    color:#4C5A9F;
     background-color: transparent;
-    border-color: turquoise;
+    border-width: 2px;
     border: solid;
     text-align: center;
     transition-duration: 0.4s;
     font-size: 20px;
-    border-radius: 22px;
-    padding: 15px 100px;
+    /*border-radius: 22px;*/
+    padding: 10px 80px;
     text-decoration: none;
 }
 
 .cv-button:hover{
-    background-color:turquoise;
-    border-color: turquoise;
+    background-color:#4C5A9F;
     color: white;
 }
 
@@ -76,6 +75,13 @@
     background-color:greenyellow;
     border-color: greenyellow;
     color: black;
+}
+
+.game-cover{
+    /*margin-left: 10%;
+    margin-right: 10%;*/
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 /* -- Navbar -- */

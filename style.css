@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 html {
@@ -21,7 +22,6 @@ p {
     text-justify: inter-word;
 }
 
-
 /*Rows and columns*/
 
 .row::after {
@@ -33,7 +33,7 @@ p {
 [class*="col-"] {
     float: left;
     padding: 20px;
-    /*border: 1px solid red;*/
+   /*border: 1px solid red;*/
 }
 
 a:visited {
@@ -124,21 +124,12 @@ a:visited {
 }
 
 .section {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 4vw; 
+    padding-bottom: 4vw;
 }
 
-.dark-section {
-    padding-top: 10px;
-    padding-bottom: 2vW;
-    background-color: #202020;
-}
-
-.light-section {
-    background-color: #F6F6F6;
-    padding-top: 10px;
-    padding-bottom: 2vW;
-}
 
 .banner {
     background-image: linear-gradient(rgba(75, 75, 75, 0.25), rgba(75, 75, 75, 0.25)), url("photos/procedural.png");
@@ -169,7 +160,6 @@ a:visited {
 .column-image {
     height: 100%;
     width: 100%;
-    ;
 }
 
 .container {
