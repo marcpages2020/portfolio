@@ -18,24 +18,49 @@
 <body>
     <!--Navbar-->
     <div id="navbar">
-        <a href="#AboutMe">About Me</a>
         <a href="#Projects">Projects</a>
+        <a href="#AboutMe">About Me</a>
         <a href="#Contact">Contact</a>
     </div>
 
-    <!-- Games -->
-    <div id="Games" class="row" style="background-color: #EBEBEB; ">
+    <!-- Projects -->
+    <div id="Projects" class="row" style="background-color: #EBEBEB; ">
         <div class="section">
             <h2 class="header" style="color: black; text-align: left;">Projects</h2>
-            <div class="game-cover" style="background-color: grey; height: 150px;"></div>
-            <div class="game-cover" style="background-color: grey; height: 150px;"></div>
-            <div class="game-cover" style="background-color: grey; height: 150px;"></div>
+
+            <div class="projects-grid-container">
+
+                <div class="project">
+                    <img src="photos/test_banner_1440x350.png" alt="Mandalorian: Ashes of the Empire">
+                    <div class="projects-overlay" >
+                        <div class="project-name"> The Mandalorian: Ashes of the Empire </div>>
+                        <div class="project-tags">
+                            <button style="background-color: blue;">C++</button>
+                            <button style="background-color: seagreen;">Own Engine</button>
+                            <button style="background-color: purple;">C#</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <img src="photos/test_banner_1440x350.png" alt="Mandalorian: Ashes of the Empire">
+                    <div class="projects-overlay" >
+                        <div class="project-name"> Fallout Strategy </div>>
+                        <div class="project-tags" style="grid-template-columns: 50% 50%;">
+                            <button style="background-color: blue;">C++</button>
+                            <button style="background-color: seagreen;">SDL</button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
         </div>
     </div>
 
     <!--About Me-->
-    <div id="AboutMe"
-        style="background-color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <div id="AboutMe" style="background-color: white">
+
         <div class="row" style="padding-bottom: 2.5%;">
             <div class="col-1 col-s-0">
             </div>
@@ -53,6 +78,7 @@
                 </p>
 
             </div>
+
             <div class="col-3 col-s-6">
                 <div class="row" style="padding: 10%;">
                     <img src="photos/personal_picture.jpeg" alt="Personal Picture" style="border-radius: 100%;">
@@ -64,88 +90,74 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-1 col-s-0">
             </div>
         </div>
-        <div class="row" style="padding-bottom: 2.5%; padding-left: 5%; padding-right: 5%;">
-            <!--Programming languages-->
-            <div class="col-4 col-s-6">
-                <div class="row">
-                    <div class="col-3 col-s-3">
-                        <img src="icons/c++_icon.png" alt="C++ level">
-                    </div>
-                    <div class="col-9 col-s-9" style="top: 50%;">
-                        <meter style="width: 100%;" value="85" max="100"></meter>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3 col-s-3">
-                        <img src="icons/cs_icon.png" alt="C# level">
-                    </div>
-                    <div class="col-9 col-s-9" style="top: 50%;">
-                        <meter style="width: 100%;" value="75" max="100"></meter>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3 col-s-3">
-                        <img src="icons/flutter_icon.png" alt="Flutter level">
-                    </div>
-                    <div class="col-9 col-s-9" style="top: 50%;">
-                        <meter style="width: 100%;" value="65" max="100"> </meter>
-                    </div>
+
+        <div class="skills-grid-container">
+
+            <!-- First Row -->
+            <div class="nested-skills-grid">
+                <img src="icons/c++_icon.png" alt="C++ level">
+                <div class="skills-bar">
+                    <div style="background-color: blue; width: 85%;"></div>
                 </div>
             </div>
 
-            <!--2D/3D Editors-->
-            <div class="col-4 col-s-6">
-                <div class="row">
-                    <div class="col-3 col-s-3">
-                        <img src="icons/maya_icon.png" alt="Maya level">
-                    </div>
-                    <div class="col-9 col-s-9" style="top: 50%;">
-                        <meter style="width: 100%;" value="75" max="100"></meter>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3 col-s-3">
-                        <img src="icons/blender_icon.png" alt="Blender level">
-                    </div>
-                    <div class="col-9 col-s-9" style="top: 50%;">
-                        <meter style="width: 100%;" value="60" max="100"></meter>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3 col-s-3">
-                        <img src="icons/photoshop_icon.png" alt="Photo level">
-                    </div>
-                    <div class="col-9 col-s-9" style="top: 50%;">
-                        <meter style="width: 100%;" value="85" max="100"></meter>
-                    </div>
+            <div class="nested-skills-grid">
+                <img src="icons/maya_icon.png" alt="C++ level">
+                <div class="skills-bar">
+                    <div style="background-color: turquoise; width: 85%;"></div>
                 </div>
             </div>
 
-            <!--Engines-->
-            <div class="col-4 col-s-6">
-                <div class="row">
-                    <div class="col-3 col-s-3">
-                        <img src="icons/unity_icon.png" alt="Unity level">
-                    </div>
-                    <div class="col-9 col-s-9" style="top: 50%;">
-                        <meter style="width: 100%;" value="70" max="100"></meter>
-                    </div>
+            <div class="nested-skills-grid">
+                <img src="icons/unity_icon.png" alt="C++ level">
+                <div class="skills-bar">
+                    <div style="background-color: black; width: 85%;"></div>
                 </div>
             </div>
-            <div class="col-4 col-s-6">
-                <div class="row">
-                    <div class="col-3 col-s-3">
-                        <img src="icons/unreal.png" alt="Unity level">
-                    </div>
-                    <div class="col-9 col-s-9" style="top: 50%;">
-                        <meter style="width: 100%;" value="40" max="100"></meter>
-                    </div>
+
+            <!-- Second Row -->
+            <div class="nested-skills-grid">
+                <img src="icons/cs_icon.png" alt="C++ level">
+                <div class="skills-bar">
+                    <div style="background-color: purple; width: 85%;"></div>
                 </div>
             </div>
+
+            <div class="nested-skills-grid">
+                <img src="icons/blender_icon.png" alt="C++ level">
+                <div class="skills-bar">
+                    <div style="background-color: orange; width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="nested-skills-grid">
+                <img src="icons/unreal.png" alt="C++ level">
+                <div class="skills-bar">
+                    <div style="background-color: black; width: 85%;"></div>
+                </div>
+            </div>
+
+            <!-- Third Row -->
+            <div class="nested-skills-grid">
+                <img src="icons/flutter_icon.png" alt="C++ level">
+                <div class="skills-bar">
+                    <div style="background-color: turquoise; width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="nested-skills-grid">
+                <img src="icons/photoshop_icon.png" alt="C++ level">
+                <div class="skills-bar">
+                    <div style="background-color: darkblue; width: 85%;"></div>
+                </div>
+            </div>
+
         </div>
+
     </div>
 
     <!--Contact-->
@@ -153,7 +165,7 @@
         <div id="Contact">
             <h2 class="header" style="padding-top: 2vw; padding-bottom: 1vw; margin: auto; color: black;">Contact</h2>
             <div class="row">
-                <div class="col-4 col-s-2">
+                <div class="col-4 col-s-0">
                 </div>
                 <div class="col-1 col-s-2">
                     <a href="mailto:marcpages13@gmail.com?Subject=Hey!"><img src="icons/email.png" alt="github"
@@ -171,11 +183,11 @@
                     <a href="https://www.linkedin.com/in/marc-pagès-francesch-7206b3186/"><img src="icons/linkedin.png"
                             alt="github" class="contact-button"></a>
                 </div>
-                <div class="col-4 col-s-2">
+                <div class="col-4 col-s-0">
                 </div>
             </div>
         </div>
-    
+
         <div style="text-align: center;; padding-top: 1vw; padding-bottom: 1vw;">Icons made by
             <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
                 href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
@@ -184,6 +196,7 @@
 
     <!--scripting-->
     <script>
+
         window.onscroll = function () {
             stickyNavbar()
         };
