@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="keywords" conent="Game,Developer,Portfolio,Programmer" />
+    <meta name="author" content="Marc Pagès Francesch" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marc Pagès Francesch | Game Developer</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../interactive.css" />
+    <link rel="stylesheet" href="../text.css" />
+</head>
+
+<body style="background-color: #333;">
+    <!--Navbar-->
+    <div id="navbar">
+        <a href="#Projects">Projects</a>
+        <a href="#AboutMe">About Me</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <div class="row" style="background-color: #EBEBEB;">
+        <div class="section">
+            <div class="col-6 col-s-12">
+                <iframe src="https://www.youtube.com/embed/0IKNcGNT-Es" width="100%" height="350px" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-6 col-s-12">
+                <h3>The Mandalorian: Ashes of the Empire</h3>
+                <p>
+                    Control The Mandalorian and defeat the waves of soldiers from the Gallactic Empire to reach your
+                    goal. <br>
+                    Ashes of the Empire is a rogue-like game developed in the context of university and is for
+                    educational purposes only.
+                </p>
+
+                <div class="project-tags">
+                    <button style="background-color: blue;">C++</button>
+                    <button style="background-color: seagreen;">Own Engine</button>
+                    <button style="background-color: purple;">C#</button>
+                </div>
+                <div class="row" style="padding-top: 3vw; padding-bottom: 2vw;">
+                    <div style="text-align: center;">
+                        <a href="https://citm-vgdd-2018-2022.github.io/TM-Ashes_of_the_Empire/" class="cv-button"
+                            style="width: 10%; text-align: center;"><b>Project Webpage</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: white">
+        <div class="section">
+            <h2>My Contribution</h2>
+            <h3>Engine Animation System</h3>
+            <div class="row">
+                <div class="col-6 col-s-12">
+                    <img src="../gifs/legion.gif" alt="Animation System">
+                </div>
+                <div class="col-6 col-s-12">
+                    <h3 style="margin: 0%;">Shader Animation</h3>
+                    <p style="font-size: 1rem;">In order to optimize our game animation system we switched from
+                        traditional skeletal animation to
+                        shader animation. It allowed us to move the processing from the CPU to the GPU, taking advantage
+                        of its multihtreading capability. We had to rework the entire system but it was worth witout any
+                        doubt, it decreased the time to calculate the new position of the mesh vertices to one fifth of
+                        its original value.</p>
+
+                    <h3 style="margin: 0%;">Animation Optimization</h3>
+                    <p style="font-size: 1rem;">
+                        To keep FPS high, the way animations were loaded, set and reproduced was optimized. I made that
+                        instead of having to iterate each bone identifying it by its name, when the animation is played,
+                        every bone is identified and saved in a Look Up Table from where it will be iterated from then
+                        on. Before this optimitzation only 6 characters consumed the same as the ones in the gif, in
+                        which there are almost 400.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Other Engine Systems</h3>
+            <div class="row">
+                <div class="col-6 col-s-12">
+                    <h3 style="margin: 0%;">Prefabs</h3>
+                    <p style="font-size: 1rem;">For fast scene editing and character and prop iteration we implemented
+                        our own prefabs system. In its usage we tryied to replicate Unity as much as possible so the
+                        members of the team could easily adapt to it and using them was intuitive.</p>
+                    <ul style="padding-inline-start: 40px;">
+                        <li>Create prefabs from any kind of game object placed in the scene.</li>
+                        <li>Override them in real time.</li>
+                        <li>Unlink it converting to a normal GameObject</li>
+                        <li>Set prefabs inside prefabs.</li>
+                        <li>Instantiate them from script.</li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-s-12">
+                    <img src="../gifs/prefabs_01.gif" alt="Animation System">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
