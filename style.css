@@ -99,9 +99,6 @@ a:visited {
 }
 
 @media only screen and (min-width: 768px) {
-    .h1 {
-        font-size: 80px;
-    }
 
     /* For desktop: */
     .col-1 {
@@ -244,20 +241,20 @@ a:visited {
 /* Skills */
 .skills-grid-container {
     display              : grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows   : repeat(3, 8vw);
-    gap                  : 20px;
-    padding-top          : 2.5%;
-    padding-bottom       : 5%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows   : repeat(4, 8vw);
+    gap                  : 5px;
+    padding-top          : 1.5%;
+    padding-bottom       : 2%;
 }
 
 .nested-skills-grid {
     display              : grid;
-    grid-template-columns: 33% auto;
+    grid-template-columns: 25% auto;
 }
 
 .nested-skills-grid>img {
-    max-width   : 60%;
+    max-width   : 80%;
     max-height  : auto;
     justify-self: center;
     align-self  : center;
@@ -268,7 +265,7 @@ a:visited {
     background-color: lightgrey;
     height          : 10%;
     margin-left     : 5%;
-    margin-right    : 10%;
+    margin-right    : 20%;
 }
 
 .skills-bar>div {
