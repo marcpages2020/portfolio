@@ -251,9 +251,9 @@ a:visited {
 }
 
 .skills-grid-title {
-    text-align: center;
-    font-size : 1.75vw;
-    padding-top: 5%;
+    text-align    : center;
+    font-size     : 1.75vw;
+    padding-top   : 5%;
     padding-bottom: 5%;
 }
 
@@ -295,10 +295,34 @@ a:visited {
 
 .skills-nested-grid-inner-bar {
     border-radius: 10px;
+    animation: progress;
+    animation-duration: 2s;
 }
 
-.skills-bar>div {
-    height: 100%;
+.progress {
+    height: 10px;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    25% {
+        width: 50%;
+    }
+
+    50% {
+        width: 75%;
+    }
+
+    75% {
+        width: 85%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 /* Social */
