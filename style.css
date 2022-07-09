@@ -167,75 +167,9 @@ a:visited {
     padding-top: 60px;
 }
 
-/* Projects */
-
 .projects-grid-container {
     display: grid;
-    row-gap: 0.75vw;
-}
-
-.project {
-    display     : grid;
-    position    : relative;
-    justify-self: center;
-}
-
-.project:hover>img {
-    opacity   : 0.4;
-    transition: .25s ease;
-}
-
-.project:hover>div {
-    opacity   : 0.8;
-    transition: .25s ease;
-}
-
-.projects-overlay {
-    position          : absolute;
-    top               : 0;
-    bottom            : 0;
-    left              : 0;
-    right             : 0;
-    height            : 100%;
-    width             : 100%;
-    opacity           : 0;
-    transition        : .3s ease;
-    background-color  : black;
-    display           : grid;
-    grid-template-rows: 50% auto;
-    align-content     : center;
-    max-width         : 100%;
-    max-height        : auto;
-}
-
-.project-name {
-    justify-self: center;
-    align-self  : center;
-    color       : white;
-    font-size   : 2vw;
-}
-
-.projects-overlay:hover>.project-tags {
-    opacity: 1;
-}
-
-.project-tags {
-    display              : grid;
-    grid-template-columns: repeat(3, 33%);
-    margin-left          : 33%;
-    margin-right         : 33%;
-    column-gap           : 5px;
-}
-
-.project-tags>button {
-    border         : none;
-    text-align     : center;
-    text-decoration: none;
-    display        : inline-block;
-    border-radius  : 10px;
-    color          : white;
-    margin         : 4px 2px;
-    padding        : 5px 8px;
+    row-gap: 1vw;
 }
 
 /* Skills */
@@ -243,7 +177,7 @@ a:visited {
     display              : grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows   : repeat(6, auto);
-    gap                  : 1.5em;
+    gap                  : 1.25em;
     padding-top          : 2.5%;
     padding-bottom       : 6.0%;
     padding-left         : 12.5%;
