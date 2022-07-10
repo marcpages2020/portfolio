@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="interactive.css" />
     <link rel="stylesheet" href="text.css" />
     <link rel="stylesheet" href="fonts.css" />
-    <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mohave" rel="stylesheet">
 </head>
 
 <body>
@@ -29,35 +32,44 @@
         <div class="section">
             <!-- <h2 style="color: black; text-align: left;">Projects</h2> -->
             <div class="projects-grid-container" style="padding-top: 4.5%">
-                <div
+                <div class="overlay-container"
+                    onClick="openUrlInNewTab('https://www.youtube.com/watch?v=1kMtiRuRZw8');">
+                    <img class="overlay-base-image" src="photos/tfg.png" alt="The Mandalorian: Ashes of the Empire"
+                        alt="From Gamepad to Sword">
+                    <img class="overlay" src="photos/tfg_overlay.png" alt="The Mandalorian: Ashes of the Empire"
+                        alt="From Gamepad to Sword">
+                </div>
+
+                <div class="overlay-container"
                     onClick="openUrlInNewTab('https://citm-vgdd-2018-2022.github.io/TM-Ashes_of_the_Empire/team/marc_pages.html');">
-                    <img src="photos/mandalorian.png" alt="The Mandalorian: Ashes of the Empire"
-                        onmouseout="this.src='photos/mandalorian.png';"
-                        onmouseover="this.src='photos/mandalorian_overlay.png';" alt="Mandalorian: Ashes of the Empire">
+                    <img class="overlay-base-image" src="photos/mandalorian.png"
+                        alt="The Mandalorian: Ashes of the Empire" alt="Mandalorian: Ashes of the Empire">
+                    <img class="overlay" src="photos/mandalorian_overlay.png" alt="The Mandalorian: Ashes of the Empire"
+                        alt="Mandalorian: Ashes of the Empire">
                 </div>
 
-                <div onClick="openUrlInNewTab('https://marcpages2020.github.io/GenesisEngine/');">
-                    <img src="photos/genesis_engine.png" alt="GenesisEngine"
-                        onmouseout="this.src='photos/genesis_engine.png';"
-                        onmouseover="this.src='photos/genesis_engine_overlay.png';" alt="GenesisEngine">
+                <div class="overlay-container"
+                    onClick="openUrlInNewTab('https://marcpages2020.github.io/GenesisEngine/');">
+                    <img class="overlay-base-image" src="photos/genesis_engine.png" alt="Genesis Engine">
+                    <img class="overlay" src="photos/genesis_engine_overlay.png" alt="Genesis Engine">
                 </div>
 
-                <div onClick="openUrlInNewTab('https://kalima-entertainment.github.io/Fallout_Strategy/team/marc_pages.html');">
-                    <img src="photos/fallout_strategy.png" alt="Fallout Strategy"
-                        onmouseout="this.src='photos/fallout_strategy.png';"
-                        onmouseover="this.src='photos/fallout_strategy_overlay.png';" alt="Fallout Strategy">
+                <div class="overlay-container"
+                    onClick="openUrlInNewTab('https://kalima-entertainment.github.io/Fallout_Strategy/team/marc_pages.html');">
+                    <img class="overlay-base-image" src="photos/fallout_strategy.png" alt="Fallout Strategy">
+                    <img class="overlay" src="photos/fallout_strategy_overlay.png" alt="Fallout Strategy">
                 </div>
 
-                <div onClick="openUrlInNewTab('https://marcpages2020.github.io/Samurai-Shodown/');">
-                    <img src="photos/samurai_shodown.png" alt="Samurai Shodown"
-                        onmouseout="this.src='photos/samurai_shodown.png';"
-                        onmouseover="this.src='photos/samurai_shodown_overlay.png';" alt="Samurai Shodown">
+                <div class="overlay-container"
+                    onClick="openUrlInNewTab('https://marcpages2020.github.io/Samurai-Shodown/');">
+                    <img class="overlay-base-image" src="photos/samurai_shodown.png" alt="Samurai Shodown">
+                    <img class="overlay" src="photos/samurai_shodown_overlay.png" alt="Samurai Shodown">
                 </div>
 
-                <div onClick="openUrlInNewTab('https://windfog-studios.github.io/The-Little-Explorer/');">
-                    <img src="photos/the_little_explorer.png" alt="The Little Explorer"
-                        onmouseout="this.src='photos/the_little_explorer.png';"
-                        onmouseover="this.src='photos/the_little_explorer_overlay.png';" alt="The Little Explorer">
+                <div class="overlay-container"
+                    onClick="openUrlInNewTab('https://windfog-studios.github.io/The-Little-Explorer/');">
+                    <img class="overlay-base-image" src="photos/the_little_explorer.png" alt="The Little Explorer">
+                    <img class="overlay" src="photos/the_little_explorer_overlay.png" alt="The Little Explorer">
                 </div>
 
             </div>
@@ -65,12 +77,12 @@
     </div>
 
     <!--About Me-->
-    <div id="AboutMe" style="background-color: #D8E6F3">
+    <div id="AboutMe" style="background-color: #D8E6F3; ">
         <div class="section">
-            <div class="row" style="padding-bottom: 2.5%;">
-                <div class="col-7">
-                    <h2 style="color: #023D73; text-align: left;">About Me</h2>
-                    <p>
+            <div class="row" style="padding-bottom: 2.5%; ">
+                <div class="col-8 col-s-12">
+                    <h2 style="color: #023D73; text-align: left; font-size: 200%;">About Me</h2>
+                    <p style="font-size: 110%; font-weight: 400; font-family: 'Mohave', sans-serif;">
                         Hi! My name is Marc and I'm a recently graduated game development student. I'm passionate
                         about
                         video games and about everything involved in their development. My main area of expertise
@@ -85,19 +97,19 @@
                         <br>
                     </p>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-3 col-s-12">
-                    <div class="row" style="margin-left: auto; margin-right: auto;">
-                        <img src="photos/personal_picture.png" alt="Personal Picture">
+                <div class="col-4 col-s-6" style="text-align: center; margin-left: auto; margin-right: auto;">
+                    <div class="row" style="height: 100%;">
+                        <img style="padding-top:auto; margin-left: auto; margin-right: 40%" src="photos/personal_picture.png" alt="Personal Picture">
                     </div>
                 </div>
             </div>
-            <div class="row" style="width: 30%; text-align:center; margin-left: auto; margin-right: auto;">
-                <a href="documents/marc_pages_francesch_cv.pdf">
-                    <img src="icons/cv_button_default.png" alt="CV"
-                        onmouseover="this.src='icons/cv_button_default.png';"
-                        onmouseout="this.src='icons/cv_button_selected.png';"></a>
+
+            <div class="overlay-container" style="width: 30%; margin-left: auto; margin-right: auto;"
+                onClick="openUrlInNewTab('documents/marc_pages_francesch_cv.pdf');">
+                <img class="overlay-base-image" src="icons/cv_button_default.png" alt="Resume">
+                <img class="overlay" src="icons/cv_button_selected.png" alt="Resume">
             </div>
+
         </div>
     </div>
 
@@ -115,7 +127,7 @@
             <div class="skills-nested-grid-title"> C++ </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid rgb(50, 99, 233);">
                 <div style="width: 90%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: rgb(50, 99, 233); height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: rgb(50, 99, 233);">
                     </div>
                 </div>
 
@@ -127,7 +139,7 @@
             <div class="skills-nested-grid-title"> Unity </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid black;">
                 <div style="width: 90%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: black; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: black;">
                     </div>
                 </div>
             </div>
@@ -138,7 +150,7 @@
             <div class="skills-nested-grid-title"> Maya </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid #32afc5;">
                 <div style="width: 80%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: #32afc5; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: #32afc5;">
                     </div>
                 </div>
             </div>
@@ -150,7 +162,7 @@
             <div class="skills-nested-grid-title"> C# </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid #a179dc;">
                 <div style="width: 80%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: #a179dc; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: #a179dc;">
                     </div>
                 </div>
             </div>
@@ -161,7 +173,7 @@
             <div class="skills-nested-grid-title"> Unreal </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid black;">
                 <div style="width: 70%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: black; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: black;">
                     </div>
                 </div>
             </div>
@@ -173,7 +185,7 @@
             <div class="skills-nested-grid-title"> Blender </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid #f19f33;">
                 <div style="width: 80%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: #f19f33; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: #f19f33;">
                     </div>
                 </div>
             </div>
@@ -186,8 +198,7 @@
             <div class="skills-nested-grid-title"> Flutter </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid rgb(54, 177, 235);">
                 <div style="width: 85%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar"
-                        style="background-color: rgb(54, 177, 235); height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: rgb(54, 177, 235);">
                     </div>
                 </div>
             </div>
@@ -199,7 +210,7 @@
             <div class="skills-nested-grid-title"> Photoshop </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid #001e36;">
                 <div style="width: 80%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: #001e36; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: #001e36;">
                     </div>
                 </div>
             </div>
@@ -211,7 +222,7 @@
             <div class="skills-nested-grid-title">Zbrush </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid #db691d;">
                 <div style="width: 70%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: #db691d; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: #db691d;">
                     </div>
                 </div>
             </div>
@@ -224,7 +235,7 @@
             <div class="skills-nested-grid-title"> SQL </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid #4479a1;">
                 <div style="width: 70%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: #4479a1; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: #4479a1;">
                     </div>
                 </div>
             </div>
@@ -236,7 +247,7 @@
             <div class="skills-nested-grid-title">Illustrator </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid #ff9a00;">
                 <div style="width: 75%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: #ff9a00; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: #ff9a00;">
                     </div>
                 </div>
             </div>
@@ -248,7 +259,7 @@
             <div class="skills-nested-grid-title"> Substance </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid red;">
                 <div style="width: 80%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: red; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: red;">
                     </div>
                 </div>
             </div>
@@ -261,7 +272,7 @@
             <div class="skills-nested-grid-title"> Python </div>
             <div class="skills-nested-grid-bar" style="border: 2px solid #f8c63d;">
                 <div style="width: 60%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: #f8c63d; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: #f8c63d;">
                     </div>
                 </div>
             </div>
@@ -273,7 +284,7 @@
             <div class="skills-nested-grid-title"> Premiere </div>
             <div class="skills-nested-grid-bar" style="border: 1.25px solid #00005b;">
                 <div style="width: 70%; height: 100%;">
-                    <div class="skills-nested-grid-inner-bar" style="background-color: #00005b; height: 100%;">
+                    <div class="skills-nested-grid-inner-bar" style="background-color: #00005b;">
                     </div>
                 </div>
             </div>
@@ -284,7 +295,8 @@
     <!--Contact-->
     <div style="background-color: #111226;">
         <div id="Contact">
-            <h2 style="padding-top: 2vw; padding-bottom: 1vw; margin: auto; color: white; text-align: center;">
+            <h2
+                style="padding-top: 2vw; padding-bottom: 1vw; margin: auto; color: white; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 2.75vw;">
                 Contact
             </h2>
             <div class="social-grid">
