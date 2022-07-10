@@ -20,8 +20,6 @@ a:visited {
     text-decoration: none;
 }
 
-
-
 /*Rows and columns*/
 .row::after {
     content: "";
@@ -98,9 +96,10 @@ a:visited {
     }
 }
 
+/* For desktop: */
 @media only screen and (min-width: 768px) {
 
-    /* For desktop: */
+
     .col-1 {
         width: 8.33%;
     }
@@ -188,11 +187,10 @@ a:visited {
 .skills-grid-title {
     text-align    : center;
     color         : #111D26;
-    font-family   : 'Montserrat', sans-serif;
-    font-size     : 1.75vw;
-    font-weight   : 700;
     padding-top   : 5%;
     padding-bottom: 5%;
+    font-size     : x-large;
+    font-weight   : bold;
     text-align    : center;
     align-self    : center;
 }
@@ -220,7 +218,6 @@ a:visited {
     padding-left: 10%;
     font-weight : 600;
     align-self  : flex-end;
-    font-size   : 120%;
 }
 
 .skills-nested-grid-bar {
